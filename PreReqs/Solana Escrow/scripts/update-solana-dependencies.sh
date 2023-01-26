@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
-#
-# Updates the solana version in all the SPL crates
-#
+
 
 here="$(dirname "$0")"
 
@@ -12,7 +9,6 @@ if [[ -z $solana_ver ]]; then
 fi
 
 if [[ $solana_ver =~ ^v ]]; then
-  # Drop `v` from v1.2.3...
   solana_ver=${solana_ver:1}
 fi
 
