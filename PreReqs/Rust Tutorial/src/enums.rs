@@ -1,7 +1,6 @@
 
 
 enum Movement {
-  // Variants
   Up,
   Down,
   Left,
@@ -9,7 +8,6 @@ enum Movement {
 }
 
 fn move_avatar(m: Movement) {
-  // Perform action depending on info
   match m {
     Movement::Up => println!("Avatar moving up"),
     Movement::Down => println!("Avatar moving down"),
